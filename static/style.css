@@ -242,3 +242,56 @@ i.menu-mobile {
     background: #fff;
     border-radius: 50%;
 }
+
+
+
+/* CAROUSEL ARROWS */
+
+.carousel-control-prev {
+    margin-left: -8rem;
+}
+
+.carousel-control-next {
+    margin-right: -8rem;
+}
+
+.carousel-indicators {
+    margin-bottom: -35px;
+}
+
+@media (max-width: 1860px) {
+    .carousel-control-prev {
+        margin-left: 0;
+    }
+    
+    .carousel-control-next {
+        margin-right: 0;
+    }
+}
+
+/* carousel smoothe transition */
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 2s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}

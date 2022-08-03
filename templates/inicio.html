@@ -33,7 +33,7 @@
 
             <div class="row mt-4 mb-5">
                 <div class="col-md-3">
-                    <img class="img-fluid shadow" src="../static/img/mnsjr.jpeg" alt="foto-mnsjr">
+                    <img class="img-fluid shadow" src="../static/img/mnsjr2.jpeg" alt="foto-mnsjr">
                 </div>
                 <div class="col-md-9">
                     <h3>Fotografo Profissional</h3>
@@ -176,7 +176,7 @@
 
     <section class="mt-5 cv" id="curriculo">
         <div class="container pb-5">
-            <h2 class="pt-3 pb-4">Currículo</h2>
+            <h2 class="pt-3">Currículo</h2><hr>
 
             <div class="row">
                 <div class="col-md-6">
@@ -221,45 +221,163 @@
         </div>
     </section>
 
-    <section id="portfolio" class="section-bg">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="portfolio" class="section-bg mt-5">
+        <div class="container pb-5 pt-5">
+            <h2 class="pb-4">Portfólio</h2>
+            <div id="carouselPortifolio" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/PythonTechDev.png" class="card-img-top" alt="Website Blog/Fórum">
+                                <div class="card-body">
+                                  <h5 class="card-title">Website Blog/Fórum</h5>
+                                  <p class="card-text">Aplicação foi desenvolvida em Flask e Bootstrap, consiste em um website com formato de fórum/blog, com funcionalidades de criar e editar conta de usuário e posts com todas as validações necessárias e integração com banco de dados em SqlAlchemy.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/mnsjr/Projeto-WebSite-Flask" target="_blank" class="btn btn-outline-dark"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="https://python-tech-dev.herokuapp.com/" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/Selenium.png" class="card-img-top" alt="Web Scraping com Selenium">
+                                <div class="card-body">
+                                  <h5 class="card-title">Web Scraping com Selenium</h5>
+                                  <p class="card-text">O script de automação foi desenvolvido com Selenium e utiliza o Pandas para manipular os dados que são coletados a partir de uma planilha .xlsx para coletar cotações de produtos de hardware nas plataformas Google Shopping e Buscapé, ao final utiliza o Win32 para automatizar o envio de email com os resultados retornados.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/mnsjr/Projeto-Automacao-Web-Scraping-Selenium" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/CV-mnsjr.png" class="card-img-top" alt="Website Currículo Digital">
+                                <div class="card-body">
+                                  <h5 class="card-title">Website Currículo Digital Responsivo</h5>
+                                  <p class="card-text">A aplicação consiste em uma aplicação web responsiva. Trata-se de um perfil pessoal com informações profissionais. Foi desenvolvido com Flask, Bootstrap, HTML, CSS, Javascript e conta com um formulário de contato construido em Flask com todas as validações necessárias.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/mnsjr/Projeto-CV-Flask-Responsivo" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../static/img/Scikit-learn.png" class="card-img-top" alt="Ciência de Dados e Machine Learning">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ciência de Dados e Machine Learning</h5>
+                                        <p class="card-text">O projeto visa realizar um estudo a partir de dados coletados junto à plataforma Airbnb sobre os imóveis disponíveis para locação na cidade do Rio de Janeiro, tendo como objetivo retornar o melhor preço possível para alugar um imóvel na cidade, tendo como métrica de análise, principlamente a localização, preço e comodidades oferecidas pelos imóveis vizinhos. O tratamento dos dados é feito com Pandas e a análise feita modelos de Regressão de Machine Learning.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://github.com/mnsjr/Projeto-Airbnb-Ciencia-de-Dados-Machine-Learning" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/Selenium.png" class="card-img-top" alt="Web Scraping com Selenium">
+                                <div class="card-body">
+                                  <h5 class="card-title">Web Scraping com Selenium</h5>
+                                  <p class="card-text">O script de automação foi desenvolvido com Selenium e utiliza o Pandas para manipular os dados que são coletados a partir de uma planilha .xlsx para coletar cotações de produtos de hardware nas plataformas Google Shopping e Buscapé.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/mnsjr/Projeto-Automacao-Web-Scraping-Selenium" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/CV-mnsjr.png" class="card-img-top" alt="Website Currículo Digital">
+                                <div class="card-body">
+                                  <h5 class="card-title">Website Currículo Digital Responsivo</h5>
+                                  <p class="card-text">A aplicação consiste em uma aplicação web responsiva. Trata-se de um perfil pessoal com informações profissionais. Foi desenvolvido com Flask, Bootstrap, HTML, CSS, Javascript.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="https://github.com/mnsjr/Projeto-CV-Flask-Responsivo" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortifolio" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>    
     </section>
+
+    <section id="contato" class="pt-5 pb-5">
+
+        <div class="container mb-5">
+            <h2 class="pt-3 pb-3">Contato</h2>
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="card p-5 shadow border-0">
+                        <div class="endereco">
+                            <h5><i class="bi bi-geo-alt m-1"></i>Localização:</h5>
+                            <p>Várzea Paulista - SP</p>
+                        </div>
+                        <div class="email">
+                            <h5><i class="bi bi-envelope m-1"></i>Email:</h5>
+                            <p>mnsjrti@gmail.com</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.8392217173778!2d-46.82908418104448!3d-23.248937014603275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1bebff8e68fdbe2!2zMjPCsDE0JzU2LjIiUyA0NsKwNDknMjkuNSJX!5e0!3m2!1sen!2sbr!4v1659504646076!5m2!1sen!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-7 mt-4 mt-md-0">
+                    <div class="card p-5 h-100 shadow border-0">
+                        
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="nome" class="form-label">Nome:</label>
+                              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome">
+                            </div>
+
+                            <div class="col-md-6">
+                              <label for="mensagem" class="form-label">Email:</label>
+                              <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+                            </div>
+                            
+                            <div class="col-12">
+                              <label for="mensagem" class="form-label">Mensagem:</label>
+                              <textarea type="text" class="form-control" id="inputAddress2" placeholder="Digite sua mensagem" name="mensagem" rows="10"></textarea>   
+                            </div>
+                            
+                            <div class="col-12 justify-content-end">
+                              <button type="submit" class="btn btn-primary">Enviar mansagem</button>
+                            </div>
+                          </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
 {% endblock %}
