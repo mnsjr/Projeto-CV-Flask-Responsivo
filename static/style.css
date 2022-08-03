@@ -193,3 +193,52 @@ i.menu-mobile {
 .section-bg {
     background-color: #eff5ff;
 }
+
+
+/* CURRÍCULO */
+.cv .cv-title {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.cv .cv-item {
+    padding: 0 0 20px 20px;
+    margin-top: -10px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.cv .cv-item h5 {
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.cv .cv-item em {
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.cv .cv-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* MARCADOR (bolinha) */
+.cv .cv-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1f5297;
+    background: #fff;
+    border-radius: 50%;
+}
