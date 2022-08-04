@@ -39,7 +39,8 @@ def send():
             subject = (f'{form_contato.nome} envio uma mensagem pelo formulário de contato de Portifólio CV.'),
             sender = app.config.get('MAIL_USERNAME'),
             recipients = ['mnsjrti@gmail.com'],
-            bory = f"""
+            reply_to = request.form['email'],
+            body = f"""
             Nome:  {form_contato.nome}
             Email:  {form_contato.email}
             Mensagem:
