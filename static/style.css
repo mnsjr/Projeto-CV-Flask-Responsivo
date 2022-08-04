@@ -329,3 +329,16 @@ i.menu-mobile {
 	transform: translateX(0);
 	transform: translate3d(0, 0, 0);
 }
+
+
+/* COTACT FORM - BTN-LOADER */
+#btn-enviar-loader {
+    display: none;
+}
+
+#alerta {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+}

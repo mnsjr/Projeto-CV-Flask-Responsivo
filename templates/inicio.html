@@ -355,21 +355,28 @@
                         <form class="row g-3" action="/send" method="POST">
                             <div class="col-md-6">
                               <label for="nome" class="form-label">Nome:</label>
-                              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome">
+                              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome" required>
                             </div>
 
                             <div class="col-md-6">
                               <label for="mensagem" class="form-label">Email:</label>
-                              <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+                              <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email" required>
                             </div>
                             
                             <div class="col-12">
                               <label for="mensagem" class="form-label">Mensagem:</label>
-                              <textarea type="text" class="form-control" id="inputAddress2" placeholder="Digite sua mensagem" name="mensagem" rows="10"></textarea>   
+                              <textarea type="text" class="form-control" id="inputAddress2" placeholder="Digite sua mensagem" name="mensagem" rows="10" required></textarea>   
                             </div>
                             
                             <div class="col-12 justify-content-end">
-                              <button type="submit" class="btn btn-primary">Enviar mansagem</button>
+                              <button id="btn-enviar" type="submit" class="btn btn-primary">
+                                Enviar mansagem
+                              </button>
+
+                              <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Enviando...
+                              </button>
                             </div>
                           </form>
 
@@ -379,6 +386,19 @@
             </div>
         </div>
     </section>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+
+                <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill"></i> {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 
 
 {% endblock %}
