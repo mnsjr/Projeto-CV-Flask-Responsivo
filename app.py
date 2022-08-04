@@ -6,15 +6,15 @@ app = Flask(__name__)
 app.secret_key = 'g2fht8deq9ew6c1t'
 
 
-
-mail = Mail(app)
-
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = email
 app.config['MAIL_PASSWORD'] = senha
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
+
+
+mail = Mail(app)
 
 
 class contato:
