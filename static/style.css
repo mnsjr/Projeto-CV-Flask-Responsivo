@@ -289,13 +289,17 @@ i.menu-mobile {
 
 
 
-@media (max-width: 1860px) {
+@media (max-width: 1900px) {
     .carousel-control-prev {
         margin-left: 0;
     }
     
     .carousel-control-next {
         margin-right: 0;
+    }
+
+    [data-anime="right"] {
+        transform: translate3d(0, 100%, 0);
     }
 }
 
